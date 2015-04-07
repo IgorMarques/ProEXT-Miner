@@ -32,16 +32,19 @@ ActiveRecord::Schema.define(version: 20150407184018) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
-    t.string   "genre"
+    t.integer  "genre"
     t.string   "status"
-    t.string   "category"
-    t.decimal  "investiment",    default: 0.0
-    t.decimal  "grade",          default: 0.0
+    t.integer  "category"
+    t.decimal  "investiment",         default: 0.0
+    t.decimal  "total_costs",         default: 0.0
+    t.decimal  "total_2015_costs",    default: 0.0
+    t.decimal  "transfer_2015_costs", default: 0.0
+    t.decimal  "grade",               default: 0.0
     t.integer  "institution_id"
     t.integer  "manager_id"
     t.integer  "sub_theme_id"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
   create_table "sub_themes", force: :cascade do |t|

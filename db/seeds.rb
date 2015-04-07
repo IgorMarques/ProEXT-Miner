@@ -23,9 +23,9 @@ SubTheme.create(
 
 Project.create(
   title: "Ajudar as criança",
-  genre: "PROGRAMA",
+  genre: 1  ,
   status: "Aprovada e comtemplada com recursos",
-  category: "Universidade Federal",
+  category: 1,
   investiment: 10000,
   grade: 10,
   sub_theme_id: 1,
