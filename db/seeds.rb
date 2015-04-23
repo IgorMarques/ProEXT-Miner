@@ -21,14 +21,16 @@ SubTheme.create(
   theme_id: 1
 )
 
-Project.create(
-  title: "Ajudar as criança",
-  genre: 1  ,
-  status: "Aprovada e comtemplada com recursos",
-  category: 1,
-  investiment: 10000,
-  grade: 10,
-  sub_theme_id: 1,
-  manager_id: 1,
-  institution_id: 1,
-)
+for i in 1..100 do
+  Project.create(
+    title: "Ajudar as criança",
+    genre: 1  ,
+    status: "Aprovada e comtemplada com recursos",
+    category: 1,
+    investiment: 10000,
+    grade: 10,
+    sub_theme_id: 1,
+    manager_id: 1,
+    institution_id: 1,
+  )
+end

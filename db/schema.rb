@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150407184018) do
+ActiveRecord::Schema.define(version: 20150416182912) do
+
+  create_table "fact_projects", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "genre"
+    t.string   "status"
+    t.integer  "category"
+    t.decimal  "investiment",         default: 0.0
+    t.decimal  "total_costs",         default: 0.0
+    t.decimal  "total_2015_costs",    default: 0.0
+    t.decimal  "transfer_2015_costs", default: 0.0
+    t.decimal  "grade",               default: 0.0
+    t.integer  "institution_id"
+    t.integer  "manager_id"
+    t.integer  "sub_theme_id"
+    t.integer  "theme_id"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+  end
 
   create_table "institutions", force: :cascade do |t|
     t.string   "name"
